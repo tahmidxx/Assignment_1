@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This HTML file was created by Md. Tahmid (ID: 1902018) -->
+    <title>Personal Details</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(248, 235, 198);
+        }
+
+        .container {
+            margin: 10px;
+            width: 35%;
+            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            background-color: rgb(255, 255, 255);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            font-size: 20px;
+            border-bottom: 1px solid black;
+        }
+
+        th {
+            background-color: lightblue;
+            text-align: right;
+            width: 150px;
+            border-right: 1px solid black;
+        }
+
+        .college-logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            background-image: url(Files/logo1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        td input[type="text"],
+        td textarea {
+            width: 100%;
+            max-width: 300px;
+        }
+        
+        h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Details</h1>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <th>Class:</th>
+                <td><input type="text" placeholder="Enter your class"></td>
+            </tr>
+            <tr>
+                <th>ID:</th>
+                <td><input type="text" placeholder="Enter your ID"></td>
+            </tr>
+            <tr>
+                <th>Department:</th>
+                <td><input type="text" placeholder="Enter your Department Name"></td>
+            </tr>
+            <tr>
+                <th>Qualifications:</th>
+                <td><textarea placeholder="Enter your qualifications"></textarea></td>
+            </tr>
+            <tr>
+                <th>Photo:</th>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><textarea placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <th>Blood Group:</th>
+                <td><input type="text" placeholder="Enter your Blood Group"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="college-logo"></div>
+</body>
+</html>

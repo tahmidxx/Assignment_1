@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This HTML file was created by Md. Tahmid (ID: 1902018) -->
+    <title>The Bookstore</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        .left-frame {
+            flex: 1;
+            padding: 20px;
+            overflow: auto;
+            background-color: #b0e0e6;
+            text-align: justify;
+        }
+        
+        .right-frame {
+            flex: 1;
+            padding: 20px;
+            overflow: auto;
+            background-color: #ffcccb;
+            text-align: justify;
+        }
+
+        .center-frame {
+            flex: 2;
+            padding: 20px;
+            overflow: auto;
+            background-color: #9370db;
+            text-align: justify; 
+        }
+
+        .center-frame h1 {
+            margin-bottom: 20px;
+        }
+
+        .center-frame p {
+            line-height: 1.6;
+        }
+
+        .audio-container {
+            margin-top: 20px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+            height: 300px;
+            width: 550px;
+        }
+
+
+        .left-frame h2 {
+            color: #fff;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .left-frame ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-frame li {
+            margin-bottom: 5px;
+        }
+
+        .left-frame a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .left-frame a:hover {
+            color: #b0e0e6;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header style="margin: 0; padding: 0;">
+        <h1 style="text-align: center; background-color: #2e0b73; color: #fff; padding: 20px; margin: 0;">The Bookstore</h1>
+    </header>
+    <div class="container">
+        <div class="left-frame">
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#page2">Books</a></li>
+                <li><a href="#page3">Authors</a></li>
+                <li><a href="#page4">Genres</a></li>
+                <li><a href="#page5">Contact</a></li>
+            </ul>
+        </div>
+        <div class="center-frame">
+            <h1 style="text-align: center;">Welcome to Our Bookstore</h1>
+            <p>
+                Welcome to our online bookstore! We offer a wide selection of books from various genres, written by talented authors. Whether you're a book enthusiast, a student looking for study materials, or someone who simply loves reading, you've come to the right place. <br>Explore our collection and find your next favorite book.
+            </p>
+            <div class="audio-container">
+                <h3>Featured Audiobook</h3>
+                <audio controls>
+                    <source src="Files/audiobook.mp3" type="audio/mpeg">
+                    
+                </audio>
+            </div>
+            <div class="video-container">
+                <h3>Book Trailer</h3>
+                <video controls width="100%">
+                    <source src="Files/BOOK ADVERTISEMENT.mp4" type="video/mp4">
+                   
+                </video>
+            </div>
+        </div>
+        <div class="right-frame">
+            <h2>Remarks</h2>
+            <p>
+                Thank you for visiting our bookstore! We are dedicated to providing a delightful reading experience for book lovers. Our friendly staff is always ready to assist you in finding the perfect book. Don't forget to check out our exclusive collection of bestsellers and new releases. Happy reading!
+            </p>
+        </div>
+    </div>
+    <footer style="text-align: center; background-color: #330b84; color: #fff; padding: 10px;">
+        &copy; 2023 The Bookstore. All rights reserved.
+    </footer>
+</body>
+</html>

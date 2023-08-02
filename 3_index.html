@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This HTML file was created by Md. Tahmid (ID: 1902018) -->
+    <title>Country Capital Selection</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            background: linear-gradient(to right, #57caf0, #9c229c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;   
+        }
+        
+        .container {
+            border: 2px solid #000000;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 20px;
+            width: 500px;
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 100%;
+        }
+
+        select:hover {
+            border-color: #999;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #66afe9;
+            box-shadow: 0 0 5px #66afe9;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .capital {
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Country Capital Selection</h1>
+        <h2>First Select a Country</h2>
+        <select id="countrySelect" onchange="showCapital()">
+            <option value="">Select a country...</option>
+            <option value="BD">Bangladesh</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+        </select>
+
+        <p id="capitalDisplay"></p>
+    </div>
+
+    <script>
+        function showCapital() {
+            const selectBox = document.getElementById("countrySelect");
+            const selectedCountry = selectBox.options[selectBox.selectedIndex].text;
+
+            const capitalDisplay = document.getElementById("capitalDisplay");
+            let capital;
+
+            switch (selectedCountry) {
+                case "Bangladesh":
+                    capital = "Dhaka";
+                    break;
+                case "Nepal":
+                    capital = "Kathmandu";
+                    break;
+                case "Pakistan":
+                    capital = "Islamabad";
+                    break;
+                case "USA":
+                    capital = "Washington, D.C.";
+                    break;
+                case "India":
+                    capital = "New Delhi";
+                    break;
+                default:
+                    capital = "N/A";
+            }
+
+            capitalDisplay.textContent = `Capital: ${capital}`;
+        }
+    </script>
+</body>
+</html>
